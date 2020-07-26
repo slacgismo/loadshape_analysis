@@ -1,14 +1,13 @@
 """Loadshape analysis tool
 
-The loadshape module computes loadshapes for an arbitary CSV load data sets.
+The loadshape analysis module computes loadshapes for arbitary CSV load data sets.
 
-Loadshapes are computed in one or more 24-hour series.  If more than one
-series is computed, they are usually grouped by daytype, e.g., `weekday`,
-`weekend`.
+Loadshapes are computed in one or more 24-hour series.  If more than one loadshape is computed, they are usually grouped by daytype, e.g., `weekday`, `weekend`.
 
-To perform a grouping, a `get` function must be defined. By default there are
-only two grouping functions, `get_daytype` and `get_hour`.  Additional grouping
-functions may be added by specifying the a default `groupby` parameter.
+To perform a customer grouping, a `get` function must be defined. By default
+there are only two grouping functions, `get_daytype` and `get_hour`. 
+Additional grouping functions may be added by specifying the `groupby`
+parameter.
 
 Example:
 
